@@ -1,7 +1,16 @@
+import { useState } from "react";
+import Formulario from "./componentes/Formulario";
+import './estilo.css'
+
 function App() {
+  const [itens, definirItens] = useState([])
   return (
     <div>
-      <h1>Olá, mundo!</h1>
+      <Formulario definirItens={definirItens} />
+
+      {itens.map((item) => (
+        <p>{item}</p>
+      ))}
     </div>
   );
 }
