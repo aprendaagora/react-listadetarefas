@@ -11,8 +11,12 @@ const Formulario = ({definirItens}) => {
 
   return (
     <form className='formulario' onSubmit={criarItem}>
-        <input className='formulario__input' value={texto} onChange={(e) => definirTexto(e.target.value)} type="text" />
-        <button className='formulario__botao-adicionar'>+</button>
+      <input
+        className='formulario__input'
+        value={texto} onChange={(e) => definirTexto(e.target.value)}
+        type="text"
+      />
+      <button className='formulario__botao-adicionar'>+</button>
     </form>
   )
 }

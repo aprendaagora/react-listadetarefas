@@ -43,9 +43,10 @@ body {
 .item__conteudo {
     flex: 1;
     background-color: white;
-    border: none;
+    border: 2px solid transparent;
     color: black;
     font-size: 1em;
+    margin-right: 5px;
 }
 
 .item__botao-apagar {
@@ -55,4 +56,38 @@ body {
     border: none;
     padding: 5px;
     cursor: pointer;
+}
+
+.item__botao-editar {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.item__botao-salvar {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.item__botao-cancelar {
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.item__conteudo--input-habilitado {
+    border: 2px solid gray;
 }
