@@ -3,22 +3,56 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.container {
+    width: 600px;
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
 .formulario {
     background-color: lightgray;
     padding: 20px;
-    width: fit-content;
     display: flex;
+    margin-bottom: 10px;
 }
 
-.input-adicionar-item {
+.formulario__input {
     font-size: 1em;
     margin-right: 5px;
+    flex: 1
 }
 
-.botao-adicionar-item {
+.formulario__botao-adicionar {
     background-color: green;
     color: white;
     width: 40px;
     font-size: 1em;
     font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.item {
+    border: 1px solid whitesmoke;
+    background-color: white;
+    padding: 5px;
+    display: flex;
+}
+
+.item__conteudo {
+    flex: 1;
+    background-color: white;
+    border: none;
+    color: black;
+    font-size: 1em;
+}
+
+.item__botao-apagar {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
 }
